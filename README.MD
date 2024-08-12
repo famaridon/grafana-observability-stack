@@ -1,6 +1,6 @@
 # Monitoring and Observability Stack
 
-This repository contains a Docker Compose setup for a complete monitoring and observability stack using Grafana, Prometheus, Loki, Tempo, and Alloy.
+This repository contains a Docker Compose setup for a complete monitoring and observability stack using Grafana, Prometheus, Loki, Tempo, and Alloy with OpenTelemetry.
 
 ## Architecture
 
@@ -34,7 +34,6 @@ This repository contains a Docker Compose setup for a complete monitoring and ob
    - **Image**: `grafana/alloy:latest`
    - **Configuration**: Mounted from `./alloy/config.alloy` to `/etc/alloy/config.alloy`
    - **Exposed Ports**:
-     - `12345` (HTTP)
      - `4317` (GRPC)
      - `4318` (HTTP)
 
